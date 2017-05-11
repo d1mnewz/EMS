@@ -1,4 +1,5 @@
 using System;
+using EMS.Core.Data;
 using EMS.Core.Entities;
 using EMS.Web.Core.Data;
 

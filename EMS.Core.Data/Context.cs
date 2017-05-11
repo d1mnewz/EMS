@@ -1,7 +1,7 @@
 ﻿using EMS.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace EMS.Web.Core.Data
+namespace EMS.Core.Data
 {
     public class Context : DbContext
     {

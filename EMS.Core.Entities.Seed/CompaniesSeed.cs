@@ -2,6 +2,7 @@
 using EMS.Core.Data;
 using EMS.Core.Infrastructure.Db;
 using EMS.Web.Core.Data;
+using EMS.Web.Core.Data.Extensions;
 using Faking;
 
 

@@ -7,7 +7,7 @@ using EMS.Core.Data;
 
 namespace EMS.Core.Data.Migrations
 {
-    [DbContext(typeof(Web.Core.Data.Context))]
+    [DbContext(typeof(Context))]
     partial class ContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

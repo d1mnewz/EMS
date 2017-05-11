@@ -22,7 +22,6 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EMS.Core.Data\EMS.Core.Data.csproj" />
     <ProjectReference Include="..\EMS.Core.Entities\EMS.Core.Entities.csproj" />
     <ProjectReference Include="..\EMS.Infrastructure.Config\EMS.Infrastructure.Config.csproj" />
     <ProjectReference Include="..\EMS.Infrastructure.DI\EMS.Infrastructure.DI.csproj" />

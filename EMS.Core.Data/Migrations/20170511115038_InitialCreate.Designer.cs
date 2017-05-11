@@ -7,7 +7,7 @@ using EMS.Core.Data;
 
 namespace EMS.Core.Data.Migrations
 {
-    [DbContext(typeof(Web.Core.Data.Context))]
+    [DbContext(typeof(Context))]
     [Migration("20170511115038_InitialCreate")]
     partial class InitialCreate
     {

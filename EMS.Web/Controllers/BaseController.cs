@@ -1,6 +1,7 @@
+using System.Linq;
 using System.Threading.Tasks;
+using EMS.Core.Data;
 using EMS.Core.Entities;
-using EMS.Web.Core.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -56,12 +57,12 @@ namespace EMS.Web.Controllers
         // GET: TEntities/Edit/5
         public async Task<IActionResult> Edit(TId id)
         {
-            var company = await Context.Set<TEntity>().SingleOrDefaultAsync(m => m.Id.Equals(id));
-            if (company == null)
+            var result = await Context.Set<TEntity>().SingleOrDefaultAsync(m => m.Id.Equals(id));
+            if (result == null)
             {
                 return NotFound();
             }
-            return View(company);
+            return View(result);
         }
 
         // POST: TEntities/Edit/5
@@ -106,7 +107,7 @@ namespace EMS.Web.Controllers
                 return NotFound();
             }
 
-            var company = await Context.Companies
+            var company = await Context.Set<TEntity>()
                 .SingleOrDefaultAsync(m => m.Id.Equals(id));
             if (company == null)
             {

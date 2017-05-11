@@ -1,6 +1,6 @@
 ﻿using System;
+using EMS.Core.Data;
 using EMS.Core.Infrastructure.Db;
-using EMS.Web.Core.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

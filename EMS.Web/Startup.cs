@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using EMS.Core.Data;
 using EMS.Infrastructure.Config;
 using Microsoft.EntityFrameworkCore;
-using Context = EMS.Web.Core.Data.Context;
+using Context = EMS.Core.Data.Context;
 
 namespace EMS.Web
 {
@@ -65,6 +65,7 @@ namespace EMS.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.InitializeDataSource();
         }
     }
 }
