@@ -9,8 +9,6 @@ namespace EMS.Infrastructure.Config
 {
     public static class DependencyInjectionInitializer
     {
-        // do i need this to extend my application further? 
-        // maybe i should just leave UseStructureMap in Program.cs?
         public static IWebHostBuilder UseDependencyInjection(this IWebHostBuilder builder)
         {
             builder.UseStructureMap();

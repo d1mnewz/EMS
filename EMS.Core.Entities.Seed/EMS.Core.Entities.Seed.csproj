@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Faker.Portable" Version="0.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EMS.Core.Data\EMS.Core.Data.csproj" />
     <ProjectReference Include="..\EMS.Core\EMS.Core.csproj" />
-    <ProjectReference Include="..\EMS.Web\EMS.Web.csproj" />
   </ItemGroup>
 
 </Project>

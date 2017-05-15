@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace EMS.Web.Core.Data.Extensions
+namespace EMS.Core.Data.Extensions
 {
     public static class DbSetExtensions
     {

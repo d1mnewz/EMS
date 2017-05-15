@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using EMS.Core.Data;
+using EMS.Core.Data.Extensions;
 using Faking;
 using EMS.Core.Extensions;
 using EMS.Core.Infrastructure.Db;
-using EMS.Web.Core.Data.Extensions;
+
 
 namespace EMS.Core.Entities.Seed
 {

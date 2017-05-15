@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EMS.Core\EMS.Core.csproj" />
+    <ProjectReference Include="..\EMS.Core.Entities.Seed\EMS.Core.Entities.Seed.csproj" />
   </ItemGroup>
 
 </Project>
