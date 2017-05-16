@@ -1,5 +1,4 @@
-﻿using System;
-using EMS.Infrastructure.DI.Registries;
+﻿using EMS.Infrastructure.DI.Registries;
 using StructureMap;
 
 namespace EMS.Infrastructure.DI
@@ -12,8 +11,7 @@ namespace EMS.Infrastructure.DI
 
             container.Configure(config =>
             {
-
-                config.AddRegistry<DefaultRegistry>();
+                config.AddRegistry<RepositoryRegistry>();
                 config.AddRegistry<DataRegistry>();
             });
 

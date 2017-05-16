@@ -1,4 +1,4 @@
-﻿namespace EMS.Core.Infrastructure.Db
+﻿namespace EMS.Core.Data.Infrastructure
 {
     public interface ISeed
     {

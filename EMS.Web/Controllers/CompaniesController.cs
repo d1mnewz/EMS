@@ -2,7 +2,6 @@ using System;
 using EMS.Core.Data;
 using EMS.Core.Entities;
 
-
 namespace EMS.Web.Controllers
 {
     public class CompaniesController : BaseController<Company, Guid>

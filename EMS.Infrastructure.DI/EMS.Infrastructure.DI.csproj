@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EMS.Core.Entities.Seed\EMS.Core.Entities.Seed.csproj" />
+    <ProjectReference Include="..\EMS.Core.Repository\EMS.Core.Repository.csproj" />
   </ItemGroup>
 
 </Project>

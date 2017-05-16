@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using EMS.Core.Data;
 using EMS.Core.Data.Extensions;
+using EMS.Core.Data.Infrastructure;
 using Faking;
 using EMS.Core.Extensions;
-using EMS.Core.Infrastructure.Db;
 
 
 namespace EMS.Core.Entities.Seed

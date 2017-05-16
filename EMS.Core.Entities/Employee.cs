@@ -1,7 +1,4 @@
-﻿using System;
-
-
-namespace EMS.Core.Entities
+﻿namespace EMS.Core.Entities
 {
     public class Employee : Entity
     {

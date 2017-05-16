@@ -4,13 +4,13 @@ namespace EMS.Core.Entities
 {
     public class Metadata
     {
-        public DateTime CreatedDate { get; set; }
-        public DateTime? ModifiedDate { get; set; }
-        public DateTime? DeletedDate { get; set; }
+        public DateTime CreatedDateUtc { get; set; }
+        public DateTime? ModifiedDateUtc { get; set; }
+        public DateTime? DeletedDateUtc { get; set; }
 
         public Metadata()
         {
-            this.CreatedDate = DateTime.Now;
+            this.CreatedDateUtc = DateTime.Now;
         }
     }
 }

@@ -1,9 +1,8 @@
 ﻿using System;
 using EMS.Core.Data;
 using EMS.Core.Data.Extensions;
-using EMS.Core.Infrastructure.Db;
+using EMS.Core.Data.Infrastructure;
 using Faking;
-
 
 namespace EMS.Core.Entities.Seed
 {

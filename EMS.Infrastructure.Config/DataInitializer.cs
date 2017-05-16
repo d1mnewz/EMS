@@ -1,11 +1,10 @@
 ﻿using System;
 using EMS.Core.Data;
-using EMS.Core.Infrastructure.Db;
+using EMS.Core.Data.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
 
 namespace EMS.Infrastructure.Config
 {
@@ -13,7 +12,7 @@ namespace EMS.Infrastructure.Config
     {
         public static void AddDataSource(this IServiceCollection services, IConfigurationRoot configuration)
         {
-            var connection = configuration.GetConnectionString("DefaultConnection");
+            var connection = configuration.GetConnectionString("Context");
             services.AddDbContext<Context>(options => options.UseSqlServer(connection));
         }
 

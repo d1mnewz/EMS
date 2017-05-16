@@ -2,7 +2,7 @@
 using EMS.Infrastructure.Config;
 using Microsoft.AspNetCore.Hosting;
 
-namespace EMS.Web
+namespace EMS.API
 {
     public class Program
     {
@@ -11,8 +11,8 @@ namespace EMS.Web
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseDependencyInjection()
                 .UseIISIntegration()
+                .UseDependencyInjection()
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
                 .Build();

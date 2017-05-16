@@ -1,4 +1,4 @@
-﻿using EMS.Core.Infrastructure.Db;
+﻿using EMS.Core.Data.Infrastructure;
 using StructureMap;
 
 namespace EMS.Infrastructure.DI.Registries
