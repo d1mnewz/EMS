@@ -1,4 +1,5 @@
 ﻿using System;
+using EMS.API.Extensions;
 using EMS.Infrastructure.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,7 +28,7 @@ namespace EMS.API
             // Add framework services.
             services.AddMvc().AddControllersAsServices();
             services.AddDataSource(Configuration);
-
+            services.AddDocumentationGeneration();
             return services.PrepareServiceProviderDI();
         }
 
@@ -36,6 +37,8 @@ namespace EMS.API
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseSwaggerWithUI();
+            
             app.UseMvc();
         }
     }

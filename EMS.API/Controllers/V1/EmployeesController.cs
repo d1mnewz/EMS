@@ -3,15 +3,12 @@ using EMS.Core.Entities;
 using EMS.Core.Repository.Employees;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EMS.API.Controllers
+namespace EMS.API.Controllers.V1
 {
     [Route("v1/Employees")]
-    public class EmployeesV1ApiController : BaseAPIController<Employee, Guid>
+    public class EmployeesController : BaseAPIController<Employee, Guid>
     {
         private readonly IEmployeeRepository _repository;
-        public EmployeesV1ApiController(IEmployeeRepository repository) : base(repository)
-        {
-            _repository = repository;
-        }
+        public EmployeesController(IEmployeeRepository repository) : base(repository) => _repository = repository;
     }
 }
